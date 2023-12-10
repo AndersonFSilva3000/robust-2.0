@@ -3,11 +3,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../public/assets/logo.png'
-import { Button } from '@/components/Button'
+import { Button } from '../Button'
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between mt-4 font-bebasNeue text-2xl text-white">
+    <header className="flex items-center justify-between pt-4 font-bebasNeue text-2xl text-white px-[80px]">
       <div>
         <Link href="/">
           <Image src={Logo} alt="Logo Robust" />

@@ -1,12 +1,16 @@
 'use client'
 
+import Arrow from '../../public/assets/Arrow.png'
+import Image from 'next/image'
+
 type Props = {
   childrean: string
+  isArrow?: boolean
 }
 
-export const Button = ({ childrean }: Props) => {
+export const Button = ({ childrean, isArrow }: Props) => {
   return (
-    <button className="relative hover:opacity-70 transition-all ">
+    <button className="relative hover:opacity-70 transition-all font-bebasNeue">
       <svg
         width="152"
         height="44"
@@ -22,6 +26,13 @@ export const Button = ({ childrean }: Props) => {
       <span className="absolute top-2 left-6 text-2xl text-white">
         {childrean}
       </span>
+      {isArrow && (
+        <Image
+          src={Arrow}
+          alt="Arrow button"
+          className="inline absolute top-3 right-7 max-w-[18px]"
+        />
+      )}
     </button>
   )
 }
