@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         bebasNeue: ['var(--font-bebasNeue)'],
         montserrat: ['var(--font-montserrat)']
+      },
+      backgroundColor: {
+        bgSecundary: '#222222'
       }
     }
   },
