@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         bebasNeue: ['var(--font-bebasNeue)'],
-        montserrat: ['var(--font-montserrat)']
+        montserrat: ['var(--font-montserrat)'],
+        bungeeOutline: ['var(--font-bungeeOutline)']
       },
       backgroundColor: {
         bgSecundary: '#222222'

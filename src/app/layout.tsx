@@ -1,16 +1,24 @@
 import type { Metadata } from 'next'
-import { Montserrat, Bebas_Neue } from 'next/font/google'
+import { Montserrat, Bebas_Neue, Bungee_Outline } from 'next/font/google'
 import './globals.css'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat'
 })
+
 const bebas_Neue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400',
   display: 'swap',
   variable: '--font-bebasNeue'
+})
+
+const bungee_outline = Bungee_Outline({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-bungeeOutline'
 })
 
 export const metadata: Metadata = {
@@ -25,7 +33,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
+      <body
+        className={`${montserrat.variable} ${bebas_Neue.variable} ${bungee_outline.variable}`}
+      >
         {children}
       </body>
     </html>

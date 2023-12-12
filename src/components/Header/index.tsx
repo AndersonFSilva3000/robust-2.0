@@ -15,7 +15,7 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center gap-7">
-        <Link href="#">Sobre</Link>
+        <Link href="#teste">Sobre</Link>
         <Link href="#">Serviços</Link>
         <Link href="#">Preços</Link>
         <Link href="#">Equipamentos</Link>
