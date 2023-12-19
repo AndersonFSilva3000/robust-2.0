@@ -4,7 +4,7 @@ import Arrow from '../../public/assets/Arrow.png'
 import Image from 'next/image'
 
 type Props = {
-  childrean: string
+  childrean?: string
   isArrow?: boolean
 }
 

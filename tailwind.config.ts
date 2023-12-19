@@ -15,6 +15,9 @@ const config: Config = {
       },
       backgroundColor: {
         bgSecundary: '#222222'
+      },
+      fill: {
+        secondary: '#FF0202'
       }
     }
   },
