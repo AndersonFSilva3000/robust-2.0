@@ -1,7 +1,8 @@
 import { Header } from '@/components/Header'
 import { MarqueeSection } from '@/components/Header/Marquee'
 import { InitialSection } from '@/components/Home-Section'
-import { PlansCards } from '@/components/Plans/Plans-cards'
+import { DifferentialSection } from '@/components/Differential/Differential-section'
+import { PlansSection } from '@/components/Plans/Plans-section'
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <InitialSection />
         <MarqueeSection />
       </div>
-      <PlansCards />
+      <DifferentialSection />
+      <PlansSection />
     </>
   )
 }

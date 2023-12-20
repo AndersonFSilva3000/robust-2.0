@@ -10,7 +10,16 @@ type Props = {
 
 export const Button = ({ childrean, isArrow }: Props) => {
   return (
-    <button className="relative hover:opacity-70 transition-all font-bebasNeue">
+    <button
+      className="relative
+      transition
+      ease-in-out
+      delay-150
+      hover:-translate-y-1
+      hover:scale-110
+      duration-300
+      font-bebasNeue"
+    >
       <svg
         width="152"
         height="44"

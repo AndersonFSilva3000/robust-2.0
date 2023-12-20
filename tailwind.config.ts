@@ -14,7 +14,17 @@ const config: Config = {
         bungeeOutline: ['var(--font-bungeeOutline)']
       },
       backgroundColor: {
-        bgSecundary: '#222222'
+        bgSecundary: '#222222',
+        bgCardPlans: '#B4B4B4',
+        bgPlanRecommended: '#FF0202'
+      },
+      textColor: {
+        colorPlans: '#787878',
+        colorPlanRecommended: '#FF0202'
+      },
+      borderColor: {
+        buttonPlan: '#787878',
+        borderPlanRecommended: '#FF0202'
       },
       fill: {
         secondary: '#FF0202'
