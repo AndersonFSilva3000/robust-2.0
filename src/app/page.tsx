@@ -3,6 +3,7 @@ import { MarqueeSection } from '@/components/Header/Marquee'
 import { InitialSection } from '@/components/Home-Section'
 import { DifferentialSection } from '@/components/Differential/Differential-section'
 import { PlansSection } from '@/components/Plans/Plans-section'
+import { FamilySection } from '@/components/Family/Section-family'
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </div>
       <DifferentialSection />
       <PlansSection />
+      <div className="bg-[url('../../public/assets/Frame2.png')] bg-left bg-no-repeat bg-contain">
+        <FamilySection />
+      </div>
     </>
   )
 }
