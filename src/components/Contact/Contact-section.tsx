@@ -4,16 +4,18 @@ import girl from '../../../public/assets/pngwing3.png'
 
 export function ContactSection() {
   return (
-    <section className="bg-bgSecundary px-20 pt-14 pb-[150px] text-white relative">
-      <div className="flex">
-        <div>
+    <section className="bg-bgSecundary xl:px-20 pt-14 pb-[150px] text-white md:px-10 max-sm:px-5 relative">
+      <div className="xl:flex md:block">
+        <div className="md:text-center xl:text-start">
           <div>
-            <h3 className=" text-[82px] font-bebasNeue">ENTRE EM CONTATO</h3>
-            <p className="text-2xl">
+            <h3 className=" xl:text-[82px] font-bebasNeue xl:text-start md:text-center md:text-5xl md:mb-5">
+              ENTRE EM CONTATO
+            </h3>
+            <p className="xl:text-2xl md:text-base">
               Matricule-se agora mesmo! Fale com um de nossos atendentes
             </p>
           </div>
-          <div className="flex gap-8 py-8">
+          <div className="flex gap-8 py-8 xl:justify-start md:justify-center max-sm:flex-col">
             <div className="relative">
               <Image src={imgInput} alt="Imagem do input" />
               <input
@@ -78,7 +80,7 @@ export function ContactSection() {
           <Image
             src={girl}
             alt="Imagem de uma garota treinando"
-            className="absolute bottom-0 right-24"
+            className="absolute bottom-0 right-24 xl:block md:hidden max-sm:hidden"
           />
         </div>
       </div>

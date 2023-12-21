@@ -4,13 +4,15 @@ import Image from 'next/image'
 
 export const InitialSection = () => {
   return (
-    <section className="flex text-white px-[80px]">
-      <div className="max-w-2xl">
-        <h2 className="font-bebasNeue text-[82px] mt-[124px]">
-          <span className="font-bungeeOutline text-[78px]">Aqui não se</span>{' '}
+    <section className="flex xl:items-center md:items-end text-white xl:px-20 md:px-10 max-sm:px-5 max-sm:my-10">
+      <div className="xl:max-w-2xl md:mb-12">
+        <h2 className="font-bebasNeue xl:text-[82px] xl:mt-[124px] md:text-5xl md:mt-16 max-sm:text-2xl max-sm:text-center">
+          <span className="font-bungeeOutline xl:text-[78px] md:text-[2.8rem] md:mr-3 md:mb-2 max-sm:text-[23px] max-sm:mr-2">
+            Aqui não se
+          </span>
           treina fofo
         </h2>
-        <p className="my-7 text-[18px]">
+        <p className="my-7 xl:text-[18px] md:text-base">
           Transforme-se na nossa academia! Oferecemos equipamentos modernos,
           instrutores qualificados e aulas para todos os níveis. Alcance seus
           objetivos fitness conosco. Experimente hoje!
@@ -21,7 +23,7 @@ export const InitialSection = () => {
         <Image
           src={ImageMenTraining}
           alt="Image men training"
-          className="max-h-[614px]"
+          className="xl:max-w-[614px] md:max-w-xs max-sm:hidden"
         />
       </div>
     </section>

@@ -16,10 +16,14 @@ export async function DifferentialCard({
   src
 }: Props) {
   return (
-    <div className="w-80 p-6 flex flex-col hover:bg-bgSecundary group">
+    <div className="w-80 p-6 flex flex-col hover:bg-bgSecundary group max-sm:text-center max-sm:justify-center max-sm:items-center">
       <img src={src} alt={title} className="max-h-20 max-w-[80px]" />
-      <h4 className="text-3xl text-white font-bebasNeue my-3">{title}</h4>
-      <p className="text-lg text-white mb-5 max-w-[274px]">{description}</p>
+      <h4 className="xl:text-3xl max-sm:text-lg text-white font-bebasNeue my-3">
+        {title}
+      </h4>
+      <p className="xl:text-lg max-sm:text-base text-white mb-5 max-w-[274px]">
+        {description}
+      </p>
       <div className="mt-auto">
         <button
           className="
