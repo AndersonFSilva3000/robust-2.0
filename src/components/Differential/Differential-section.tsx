@@ -5,10 +5,7 @@ export async function DifferentialSection() {
   const data = await getData('differential')
 
   return (
-    <section
-      className=" xl:px-20 xl:pt-40 mb-36 md:mt-36 md:px-10 max-sm:px-5"
-      id="teste"
-    >
+    <section className=" xl:px-20 xl:pt-40 mb-36 md:mt-36 md:px-10 max-sm:px-5">
       <h3 className="font-bebasNeue xl:text-7xl md:text-5xl text-white text-center max-sm:mt-10 max-sm:text-2xl">
         <span className="font-bungeeOutline xl:text-[68px] md:text-[2.8rem] md:mr-7 max-sm:mr-2 max-sm:text-[23px]">
           nossos

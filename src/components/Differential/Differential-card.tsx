@@ -36,7 +36,6 @@ export async function DifferentialCard({
             hover:scale-110
             duration-300
             "
-          id="teste"
         >
           <svg
             width="152"

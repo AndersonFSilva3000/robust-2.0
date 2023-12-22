@@ -1,6 +1,9 @@
+'use client'
+
 import Image from 'next/image'
 import imgInput from '../../../public/assets/input_contact.png'
 import girl from '../../../public/assets/pngwing3.png'
+import InputMask from 'react-input-mask'
 
 export function ContactSection() {
   return (
@@ -35,7 +38,8 @@ export function ContactSection() {
             </div>
             <div className="relative">
               <Image src={imgInput} alt="Imagem do input" />
-              <input
+              <InputMask
+                mask={'(99) 99999-9999'}
                 type="text"
                 placeholder="TELEFONE"
                 className="
