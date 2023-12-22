@@ -22,13 +22,13 @@ export function PlansCards({
 
   if (!recommended) {
     return (
-      <div className="bg-bgCardPlans xl:max-w-none md:max-w-[284px] md:justify-self-center">
+      <div className="bg-bgCardPlans">
         <img src={url} alt={title} className="w-full" />
-        <h4 className="bg-black text-white font-bebasNeue px-3 py-5 xl:text-4xl md:text-2xl">
+        <h4 className="bg-black text-white font-bebasNeue px-3 py-5 text-4xl">
           {title}
         </h4>
         <div className="px-6 py-3 flex justify-between items-center">
-          <p className="xl:text-2xl md:text-lg text-colorPlans">
+          <p className="text-2xl text-colorPlans">
             {subTitle}
             {prince ? (
               <span className="block text-white font-bold">
@@ -40,7 +40,7 @@ export function PlansCards({
           </p>
           <button
             className="
-              xl:text-lg
+              text-lg
               font-bold
              text-colorPlans
               border-solid border
@@ -59,33 +59,16 @@ export function PlansCards({
   }
 
   return (
-    <div
-      className="
-      bg-bgCardPlans
-      md:justify-self-center
-      xl:col-auto
-      xl:max-w-none
-      md:col-span-2
-      md:max-w-[284px]"
-    >
-      <span
-        className="
-        block
-        bg-bgPlanRecommended
-        xl:text-[18px]
-        text-white
-        text-center
-        py-2
-        font-bold"
-      >
+    <div className="bg-bgCardPlans">
+      <span className="block bg-bgPlanRecommended text-[18px] text-white text-center py-2 font-bold">
         RECOMENDADO POR USUÁRIOS
       </span>
       <img src={url} alt={title} className="w-full" />
-      <h4 className="bg-bgPlanRecommended text-white font-bebasNeue px-3 py-5 xl:text-4xl md:text-2xl">
+      <h4 className="bg-bgPlanRecommended text-white font-bebasNeue px-3 py-5 text-4xl">
         {title}
       </h4>
       <div className="px-6 py-3 flex justify-between items-center">
-        <p className="xl:text-2xl md:text-lg text-colorPlans">
+        <p className="text-2xl text-colorPlans">
           {subTitle}
           {prince ? (
             <span className="block text-white font-bold">
@@ -97,7 +80,7 @@ export function PlansCards({
         </p>
         <button
           className="
-           xl:text-lg font-bold
+           text-lg font-bold
          text-colorPlanRecommended
            border-solid
            border

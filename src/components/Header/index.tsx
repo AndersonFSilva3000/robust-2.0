@@ -8,10 +8,6 @@ import React from 'react'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [isHoverAbout, setIsHoverAbout] = React.useState(false)
-  const [isHoverPrice, setIsHoverPrice] = React.useState(false)
-  const [isHoverService, setIsHoverService] = React.useState(false)
-  const [isHoverEquipment, setIsHoverEquipment] = React.useState(false)
 
   return (
     <>
@@ -44,58 +40,14 @@ export const Header = () => {
         </div>
 
         <div className="flex items-center gap-7 max-sm:hidden">
-          <Link
-            href="#"
-            className="relative"
-            onMouseEnter={() => setIsHoverAbout(true)}
-            onMouseLeave={() => setIsHoverAbout(false)}
-          >
-            Sobre
-            <span
-              className={`absolute bottom-0 left-0 w-full h-1 bg-white transition-all duration-300 overflow-hidden ${
-                isHoverAbout ? 'w-4' : 'w-0'
-              }`}
-            ></span>
-          </Link>
-          <Link
-            href="#"
-            className="relative"
-            onMouseEnter={() => setIsHoverService(true)}
-            onMouseLeave={() => setIsHoverService(false)}
-          >
+          <Link href="#">Sobre</Link>
+          <Link href="#" className="relative">
             Serviços
-            <span
-              className={`absolute bottom-0 left-0 w-full h-1 bg-white transition-all duration-300 overflow-hidden ${
-                isHoverService ? 'w-4' : 'w-0'
-              }`}
-            ></span>
           </Link>
-          <Link
-            href="#"
-            className="relative"
-            onMouseEnter={() => setIsHoverPrice(true)}
-            onMouseLeave={() => setIsHoverPrice(false)}
-          >
+          <Link href="#" className="relative">
             Preços
-            <span
-              className={`absolute bottom-0 left-0 w-full h-1 bg-white transition-all duration-300 overflow-hidden ${
-                isHoverPrice ? 'w-4' : 'w-0'
-              }`}
-            ></span>
           </Link>
-          <Link
-            href="#"
-            className="relative"
-            onMouseEnter={() => setIsHoverEquipment(true)}
-            onMouseLeave={() => setIsHoverEquipment(false)}
-          >
-            Equipamentos
-            <span
-              className={`absolute bottom-0 left-0 w-full h-1 bg-white transition-all duration-300 overflow-hidden ${
-                isHoverEquipment ? 'w-4' : 'w-0'
-              }`}
-            ></span>
-          </Link>
+          <Link href="#">Equipamentos</Link>
           <Button childrean="Registres-se" />
         </div>
       </header>
